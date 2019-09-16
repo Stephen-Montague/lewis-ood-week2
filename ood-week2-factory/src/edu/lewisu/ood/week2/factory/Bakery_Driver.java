@@ -27,8 +27,8 @@ public class Bakery_Driver {
     	// Demo Factory
     	BakingRecipe usaRecipe = new AmericanBakingRecipe();
     	BakingRecipe japRecipe = new JapaneseBakingRecipe();
-   	    Cake cake1 = usaRecipe.bakeCake("Angel Food");
-        Cake cake2 = japRecipe.bakeCake("Devil's Food");
+   	    Cake cake1 = usaRecipe.orderCake("Angel Food");
+        Cake cake2 = japRecipe.orderCake("Devil's Food");
 
         // Demo Decorator      
         cake1 = new TopFrostedWhite(cake1);
